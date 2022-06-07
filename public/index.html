@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Games</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<div class="header">
+    <h1>Video Game App</h1>
+</div>
+<body id="video-games">
+<div class="flex-container">
+<div>
+  <h3>Video Game Platform:</h3>
+  <label for="platform">Choose your platform:</label>
+  <select name="games" id="games">
+  <option id="all-Games" value="all-games">All Games</option>
+  <option id="cross" value="cross">CrossPlay</option>
+  </select>
+  <br>
+  <h3>Add a game to the list:</h3>
+  <form id="form">
+  <label for="game-name">Video Game Name:</label>
+  <input type="text" id="game-name" name="game-name" placeholder="Ex: 'Halo'">
+  <br>
+    <input type="checkbox" id="isCrossPlay" name="isCrossPlay">
+    <label> Cross Play </label><br>
+    <input type="submit" value="Add Game">
+  </form>
+  <div class="footer">
+    <h2>Click here to get a random video game suggestion:</h2>
+    <div>
+    <input type="button" value="Random Game" id="random-suggestion">
+    <div id="randomGame"></div>
+    </div>
+  </div>
+  </div>
+  <div>
+    <h3>Video Game List:</h3>
+    <div id="game-list">
+    </div>
+  </div>
+</div>
+<br>
+<br>
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>

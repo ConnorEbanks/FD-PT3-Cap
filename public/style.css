@@ -1,0 +1,49 @@
+body {
+    font-size: 20px;
+    text-align: left;
+    background-color: lightslategray;
+  }
+
+.header {
+  position: static;
+  padding: 10px;
+  text-align: center;
+  background: black;
+  color: white;
+  font-size: 20px;
+  width: 100%;
+}
+
+.footer {
+  position: static;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+input[type=button] {
+  color: black;
+  float: left;
+  margin-left: 300px;
+  margin-bottom: 100px;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-container > div {
+  width: 1000px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 18px;
+}
+
+#game-list {
+  line-height: normal;
+  display: flex;
+  flex-direction: column;
+}
+
